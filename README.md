@@ -28,3 +28,26 @@ Features:
 
 * Add virtual node layer in the consistent hashing.
 * Implement virtual node with data replication. 
+
+```
+python test_ch_client.py
+```
+
+example output:
+```
+...
+...
+server at 127.0.0.1:4000 cached 2 data
+server at 127.0.0.1:4001 cached 4 data
+server at 127.0.0.1:4002 cached 29 data
+server at 127.0.0.1:4003 cached 5 data
+*********************************DELETE NODE 2 FOR REPLICATION TESTING****************************************
+*********************************DELETE NODE 2 FOR REPLICATION TESTING****************************************
+*********************************DELETE NODE 2 FOR REPLICATION TESTING****************************************
+...
+...
+server at 127.0.0.1:4000 cached 24 data
+server at 127.0.0.1:4001 cached 6 data
+server at 127.0.0.1:4002 cached 29 data
+server at 127.0.0.1:4003 cached 46 data
+```
